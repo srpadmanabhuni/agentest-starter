@@ -1,0 +1,2 @@
+# agentest is not on PyPI yet; install the tagged release from GitHub.
+agentest-ai @ git+https://github.com/srpadmanabhuni/agentest.git@v3.3.2

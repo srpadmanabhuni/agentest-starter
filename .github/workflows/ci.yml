@@ -1,0 +1,26 @@
+name: agentest
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  agentest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python -m pip install -r requirements.txt
+      - name: Run the demo (the unconfirmed write is an intentional fail)
+        run: ./scripts/run.sh
+      - name: Gate the repaired trace (exit 1 on any fail)
+        run: >-
+          agentest std run --otlp agents/demo_agent/traces/write-with-confirm.otlp.json
+          --tools agents/demo_agent/tools.json --ids T5-001,T5-007 --strict --format md
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: agentest-reports
+          path: build/
