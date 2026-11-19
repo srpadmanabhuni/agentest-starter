@@ -11,7 +11,7 @@ Click **Use this template**, or clone it, then:
 
 ```bash
 python3 -m venv .venv && . .venv/bin/activate
-python -m pip install -r requirements.txt   # installs agentest v3.3.2 from GitHub (it is not on PyPI)
+python -m pip install -r requirements.txt   # installs agentest-ai from PyPI
 ./scripts/run.sh
 ```
 
