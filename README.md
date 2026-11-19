@@ -1,6 +1,8 @@
 # agentest-starter
 
-A template repo that runs [agentest](https://github.com/srpadmanabhuni/agentest) on a tiny synthetic agent.
+**Part of [agentest](https://github.com/srpadmanabhuni/agentest), start here.**
+
+A template repo that runs [agentest](https://github.com/srpadmanabhuni/agentest) on a tiny example use-case agent.
 agentest is an offline, deterministic checker for AI agents: give it OpenTelemetry GenAI traces (optionally an
 MCP tools list and an A2A AgentCard) and it returns `pass` / `fail` / `n/a` for each of its 130 checks.
 No API key, model or network is needed to judge.
@@ -17,7 +19,7 @@ Python 3.11 or newer.
 
 ## What you will see
 
-`agents/demo_agent/` holds two hand-written, synthetic episodes and the MCP tools list they use:
+`agents/demo_agent/` holds two hand-written use-case episodes and the MCP tools list they use:
 
 | Trace | What happens | T5-007 (write needs its confirmation flag) |
 |---|---|---|
