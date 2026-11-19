@@ -50,3 +50,7 @@ Other inputs (A2A AgentCard via `--card`, native framework logs via `agentest st
 Passing a check describes the evidence in that trace; it is not certification of an agent.
 
 Apache-2.0. The demo traces and tools list are copied from agentest (Apache-2.0).
+
+## Optional: require passing evidence in your own CI
+
+The demo workflow gates the bundled repaired trace. When adapting it to your own agent, see [the optional own-agent gate](docs/OWN-AGENT-GATE.md). It requires selected checks to report `pass`, so `n/a` blocks this optional gate without changing agentest's normal `--strict` behaviour.
