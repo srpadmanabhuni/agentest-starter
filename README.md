@@ -4,7 +4,7 @@
 
 A template repo that runs [agentest](https://github.com/srpadmanabhuni/agentest) on a tiny example use-case agent.
 agentest reads OpenTelemetry GenAI traces (optionally an MCP tools list and an A2A AgentCard) and returns `pass` / `fail` / `n/a` for each of its 165 tests.
-No API key, model or network is needed to judge. Install the runner with `pip install agentest-ai` (this template does that via `requirements.txt`).
+No API key, model or network is needed to judge. This template installs the runner from PyPI through `requirements.txt`.
 
 Click **Use this template**, or clone it, then:
 
@@ -26,7 +26,7 @@ Python 3.11 or newer.
 | `write-with-confirm.otlp.json` | the same call with `"confirm": true` | `pass` |
 
 `scripts/run.sh` prints a short Markdown table for three checks (`T5-001`, `T5-007`, `T2-001`) per trace and writes
-JUnit XML and HTML reports for all 130 checks to `build/`. Most checks are `n/a` on a three-span trace: missing evidence
+JUnit XML and HTML reports for every check to `build/`. Most checks are `n/a` on a three-span trace: missing evidence
 is not a pass. The traces come from agentest's
 [`examples/first_trace`](https://github.com/srpadmanabhuni/agentest/tree/main/examples/first_trace), which explains each verdict.
 
