@@ -12,4 +12,4 @@ for trace in "$AGENT_DIR"/traces/*.otlp.json*; do
   agentest std run --otlp "$trace" --tools "$AGENT_DIR/tools.json" --format junit --out "build/$name.junit.xml" >/dev/null
   agentest std run --otlp "$trace" --tools "$AGENT_DIR/tools.json" --format html --out "build/$name.html" >/dev/null
 done
-echo "Reports written to build/ (JUnit XML and HTML, all 130 checks)."
+echo "Reports written to build/ (JUnit XML and HTML, all 165 tests)."

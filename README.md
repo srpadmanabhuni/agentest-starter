@@ -4,7 +4,7 @@
 
 A template repo that runs [agentest](https://github.com/srpadmanabhuni/agentest) on a tiny example use-case agent.
 agentest is an offline, deterministic checker for AI agents: give it OpenTelemetry GenAI traces (optionally an
-MCP tools list and an A2A AgentCard) and it returns `pass` / `fail` / `n/a` for each of its 130 checks.
+MCP tools list and an A2A AgentCard) and it returns `pass` / `fail` / `n/a` for each of its 165 tests.
 No API key, model or network is needed to judge.
 
 Click **Use this template**, or clone it, then:
@@ -27,7 +27,7 @@ Python 3.11 or newer.
 | `write-with-confirm.otlp.json` | the same call with `"confirm": true` | `pass` |
 
 `scripts/run.sh` prints a short Markdown table for three checks (`T5-001`, `T5-007`, `T2-001`) per trace and writes
-JUnit XML and HTML reports for all 130 checks to `build/`. Most checks are `n/a` on a three-span trace: missing evidence
+JUnit XML and HTML reports for all 165 tests to `build/`. Most checks are `n/a` on a three-span trace: missing evidence
 is not a pass. The traces come from agentest's
 [`examples/first_trace`](https://github.com/srpadmanabhuni/agentest/tree/main/examples/first_trace), which explains each verdict.
 
@@ -46,7 +46,7 @@ Other inputs (A2A AgentCard via `--card`, native framework logs via `agentest st
 ## Links
 
 - Runner and docs: https://github.com/srpadmanabhuni/agentest
-- Test catalogue (110 designs): https://huggingface.co/datasets/srinivaspadmanabhuni/agentic-ai-test-checklist-110
+- Test catalogue: https://huggingface.co/datasets/srinivaspadmanabhuni/agentic-ai-test-checklist-110
 - Found a wrong verdict? Use the [agentest issue forms](https://github.com/srpadmanabhuni/agentest/issues/new/choose).
 
 Passing a check describes the evidence in that trace; it is not certification of an agent.
