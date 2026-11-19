@@ -1,11 +1,10 @@
 # agentest-starter
 
-**Part of [agentest](https://github.com/srpadmanabhuni/agentest), start here.**
+**Part of [agentest](https://github.com/srpadmanabhuni/agentest), start here.** agentest is an open-source tool for [agentic evals](https://srpadmanabhuni.github.io/agentest/what-are-agentic-evals.html).
 
 A template repo that runs [agentest](https://github.com/srpadmanabhuni/agentest) on a tiny example use-case agent.
-agentest is an offline, deterministic checker for AI agents: give it OpenTelemetry GenAI traces (optionally an
-MCP tools list and an A2A AgentCard) and it returns `pass` / `fail` / `n/a` for each of its 130 checks.
-No API key, model or network is needed to judge.
+agentest reads OpenTelemetry GenAI traces (optionally an MCP tools list and an A2A AgentCard) and returns `pass` / `fail` / `n/a` for each of its 165 tests.
+No API key, model or network is needed to judge. Install the runner with `pip install agentest-ai` (this template does that via `requirements.txt`).
 
 Click **Use this template**, or clone it, then:
 
@@ -45,8 +44,9 @@ Other inputs (A2A AgentCard via `--card`, native framework logs via `agentest st
 
 ## Links
 
+- What are [agentic evals](https://srpadmanabhuni.github.io/agentest/what-are-agentic-evals.html)?
 - Runner and docs: https://github.com/srpadmanabhuni/agentest
-- Test catalogue (110 designs): https://huggingface.co/datasets/srinivaspadmanabhuni/agentic-ai-test-checklist-110
+- Test catalogue: https://huggingface.co/datasets/srinivaspadmanabhuni/agentic-ai-test-checklist-110
 - Found a wrong verdict? Use the [agentest issue forms](https://github.com/srpadmanabhuni/agentest/issues/new/choose).
 
 Passing a check describes the evidence in that trace; it is not certification of an agent.
