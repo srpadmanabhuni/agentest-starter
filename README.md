@@ -1,8 +1,10 @@
 # agentest-starter
 
-**Part of [agentest](https://github.com/srpadmanabhuni/agentest), start here.** agentest is an open-source tool for [agentic evals](https://srpadmanabhuni.github.io/agentest/what-are-agentic-evals.html).
+agentest (agentest-ai) — deterministic OpenTelemetry evals for AI agents.
 
-A template repo that runs [agentest](https://github.com/srpadmanabhuni/agentest) on a tiny example use-case agent.
+**Part of [agentest open-source agentic evals](https://github.com/srpadmanabhuni/agentest), start here.** agentest is an open-source tool for [agentic evals](https://srpadmanabhuni.github.io/agentest/what-are-agentic-evals.html).
+
+A template repo that runs [agentest open-source agentic evals](https://github.com/srpadmanabhuni/agentest) on a tiny example use-case agent.
 agentest reads OpenTelemetry GenAI traces (optionally an MCP tools list and an A2A AgentCard) and returns `pass` / `fail` / `n/a` for each of its 165 tests.
 No API key, model or network is needed to judge. This template installs the runner from PyPI through `requirements.txt`.
 
@@ -45,7 +47,7 @@ Other inputs (A2A AgentCard via `--card`, native framework logs via `agentest st
 ## Links
 
 - What are [agentic evals](https://srpadmanabhuni.github.io/agentest/what-are-agentic-evals.html)?
-- Runner and docs: https://github.com/srpadmanabhuni/agentest
+- Runner and docs: [agentest open-source agentic evals](https://github.com/srpadmanabhuni/agentest)
 - Test catalogue: https://huggingface.co/datasets/srinivaspadmanabhuni/agentic-ai-test-checklist-110
 - Found a wrong verdict? Use the [agentest issue forms](https://github.com/srpadmanabhuni/agentest/issues/new/choose).
 
