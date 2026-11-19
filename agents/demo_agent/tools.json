@@ -2,7 +2,7 @@
   "tools": [
     {
       "name": "read_record",
-      "description": "Read a synthetic record",
+      "description": "Read a use-case record",
       "inputSchema": {
         "type": "object",
         "properties": {"record_id": {"type": "string"}, "reason": {"type": "string"}},
@@ -12,7 +12,7 @@
     },
     {
       "name": "mark_reviewed",
-      "description": "Mark a synthetic record reviewed, with confirmation",
+      "description": "Mark a use-case record reviewed, with confirmation",
       "inputSchema": {
         "type": "object",
         "properties": {"record_id": {"type": "string"}, "confirm": {"type": "boolean"}, "reason": {"type": "string"}},
