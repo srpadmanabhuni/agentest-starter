@@ -1,0 +1,26 @@
+# INACTIVE EXAMPLE. Replace the trace, tools and IDs before activating.
+# Requires scripts/gate.py plus the starter repository's requirements.txt.
+name: own-agent-evidence-gate
+on:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  recorded-evidence:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r requirements.txt
+      - name: Require selected evidence from YOUR recorded trace
+        run: >-
+          python scripts/gate.py
+          --trace agents/YOUR_AGENT/traces/YOUR_RECORDED_RUN.otlp.json
+          --tools agents/YOUR_AGENT/tools.json
+          --ids T5-001,T5-007
+# Optional: append --card agents/YOUR_AGENT/agent-card.json if needed.
+# IDs above are examples, not a universal safety policy.
+# No artifacts are uploaded: reports may contain private trace evidence.
