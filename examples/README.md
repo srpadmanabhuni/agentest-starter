@@ -4,4 +4,4 @@
 - Emit OTel spans from plain Python: agentest `examples/otel_plain/emit_trace.py`.
 - Native logs (`steps`, `events`, `openai_agents`, `langgraph_msgs`, `autogen`, `n8n`): `agentest std import --dialect <name> ...`.
 
-Upstream: https://github.com/srpadmanabhuni/agentest
+Upstream: [agentest open-source agentic evals](https://github.com/srpadmanabhuni/agentest)
